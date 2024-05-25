@@ -55,6 +55,15 @@ const MovementSchema = {
     type: DataTypes.STRING,
     allowNull: true,
   },
+  lote:{
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
+  fechaVencimiento:{
+    type: DataTypes.DATE,
+    allowNull: true,
+    defaultValue: Sequelize.NOW
+  },
   colaboratorId: {
     type: DataTypes.INTEGER,
     allowNull: false,
